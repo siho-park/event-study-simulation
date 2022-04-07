@@ -300,7 +300,7 @@ library(fixest)
     ylab("Coefficients") +
     theme_bw()
     
-  ggsave("event_ols.png", path = path)
+  ggsave("event_ols.png", path = path, width = 4, height = 2.5)
   
   results %>%
     filter(estimator == "cs") %>%
@@ -316,7 +316,7 @@ library(fixest)
     ylab("Coefficients") +
     theme_bw()
  
-  ggsave("event_cs.png", path = path)
+  ggsave("event_cs.png", path = path, width = 4, height = 2.5)
   
   results %>%
     filter(estimator == "cs1") %>%
@@ -332,7 +332,7 @@ library(fixest)
     ylab("Coefficients") +
     theme_bw()
 
-  ggsave("event_cs1.png", path = path)
+  ggsave("event_cs1.png", path = path, width = 4, height = 2.5)
   
   results %>%
     filter(estimator == "cs2") %>%
@@ -348,7 +348,7 @@ library(fixest)
     ylab("Coefficients") +
     theme_bw()
 
-  ggsave("event_cs2.png", path = path)
+  ggsave("event_cs2.png", path = path, width = 4, height = 2.5)
   
   average %>%
     ggplot() +
@@ -362,7 +362,7 @@ library(fixest)
     theme(legend.position = 'bottom') +
     ggtitle("Comparison of error rate")
     
-  ggsave("event_error.png", path = path)
+  ggsave("event_error.png", path = path, width = 4, height = 2.5)
   
   
   
